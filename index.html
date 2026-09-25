@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - BS Economics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Samra</div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Extra Interactive Feature: Dark Mode Toggle Button -->
+        <button id="themeBtn" class="theme-toggle-btn">🌙 Dark Mode</button>
+        
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero / Introduction Section -->
+  <section id="hero" class="hero-section">
+    <h1>Hi, I'm <span>Samra</span></h1>
+    <p>BS Economics (5th Semester) Student & Frontend Developer</p>
+    <a href="#projects" class="cta-btn">View My Work</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am an undergraduate student currently enrolled in my 5th semester of BS Economics. Alongside my major, I am deeply passionate about web development, digital design, and building creative online solutions. I aim to blend analytical economic perspectives with modern technical skills.</p>
+      <h3>Qualifications</h3>
+      <ul>
+        <li><strong>Degree:</strong> BS Economics (5th Semester)</li>
+        <li><strong>Current CGPA:</strong> 3.13/ 4.0</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Economic Data Analysis</div>
+      <div class="skill-card">Figma & Canva</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>1. Economic Data Dashboard</h3>
+      <p>A web interface designed to visualize macroeconomic indicators and statistical data trends using clean layout styling.</p>
+    </div>
+    <div class="project-card">
+      <h3>2. Personal Budget Tracker</h3>
+      <p>A JavaScript-powered app that helps users log income and expenses to manage personal finances effectively.</p>
+    </div>
+    <div class="project-card">
+      <h3>3. Digital Campaign Portfolio</h3>
+      <p>A creative showcase built with HTML and CSS highlighting graphical design assets and content layouts.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section with Form Validation -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="nameInput" placeholder="Your Name" required>
+      <input type="email" id="emailInput" placeholder="Your Email" required>
+      <textarea id="messageInput" placeholder="Your Message" rows="5" required></textarea>
+      
+      <button type="submit" class="submit-btn">Send Message</button>
+      
+      <!-- Form Feedback Message -->
+      <p id="formFeedback" class="feedback-msg"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Samra. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
